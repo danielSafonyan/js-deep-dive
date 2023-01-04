@@ -18,4 +18,3 @@ for (let i = 0; i < 3; i++) {
 
 // we will get an error because i is not declared.
 // if we comment out console.log(i) the output should be: 0, 1, 2. Why? Because let is block scoped and value remains only during the iteration.
-
