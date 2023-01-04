@@ -13,6 +13,14 @@ const cars = [
 ];
 
 const allCarWeightSum = cars.reduce((accum, el) => accum + el.weight, 0)
+console.log("allCarWeightSum", allCarWeightSum)
 
 const eCarWeightSum = cars.reduce((accum, cur) => cur.isElectric ? cur.weight : 0, 0)
-console.log(eCarWeightSum)
+console.log("eCarWeightSum", eCarWeightSum)
+
+
+// With .reduce you can also create new arrays
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const doubledArray = numbers.reduce((accum, cur) => [...accum, cur * 2], [])
+console.log("doubledArray", doubledArray)
